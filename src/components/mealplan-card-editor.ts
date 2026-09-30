@@ -5,6 +5,7 @@ import { renderBool } from '../utils/editor-renders';
 import { isFeatureSupported } from '../utils/mealie-capabilities';
 import { entryTypeOptions } from '../utils/format.js';
 import { BaseMealieCardEditor } from './base-card-editor';
+import { localizeForLang } from '../utils/translate.js';
 import { defineOnce } from '../utils/define-once.js';
 
 function normalizeDayOffset(value: number | string | undefined): number | string {
@@ -84,11 +85,15 @@ export class MealieMealplanCardEditor extends BaseMealieCardEditor<MealieMealpla
     fireEvent(this, 'config-changed', { config: this.config });
   }
 
+  // Meal type chips use the card's `language` option, so they match what the card displays.
+  private _localizeCardLanguage = (key: string): string =>
+    localizeForLang(this.config?.language ?? this.hass?.locale?.language ?? 'en', key);
+
   private _renderEntryTypes(): TemplateResult {
     const selected = new Set(this.config.entry_types ?? []);
     return html`
       <div class="entry-type-chips">
-        ${entryTypeOptions(this.localize).map(
+        ${entryTypeOptions(this._localizeCardLanguage).map(
           ({ value, label }) => html`
             <button class="entry-chip ${selected.has(value) ? 'active' : ''}" @click=${() => this._toggleEntryType(value)}>${label}</button>
           `

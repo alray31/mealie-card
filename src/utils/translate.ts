@@ -5,7 +5,6 @@ import * as es from '../translations/es.json';
 import * as fr_be from '../translations/fr-BE.json';
 import * as fr_ca from '../translations/fr-CA.json';
 import * as fr from '../translations/fr.json';
-import * as fr_ca from '../translations/fr-CA.json';
 import * as it from '../translations/it.json';
 import * as nl from '../translations/nl.json';
 import * as pl from '../translations/pl.json';
@@ -23,6 +22,7 @@ const languages: Record<string, TranslationTree> = {
   en,
   es,
   fr,
+  'fr-BE': fr_be,
   'fr-CA': fr_ca,
   it,
   nl,
