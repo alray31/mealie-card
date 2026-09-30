@@ -14,9 +14,9 @@
     "no_recipe": "Aucune recette",
     "no_mealplan": "Aucun repas",
     "today": "Aujourd'hui",
-    "breakfast": "Déjeuner",
-    "lunch": "Dîner",
-    "dinner": "Souper",
+    "breakfast": "Petit-déjeuner",
+    "lunch": "Déjeuner",
+    "dinner": "Dîner",
     "side": "Accompagnement",
     "dessert": "Dessert",
     "drink": "Boisson",
@@ -131,11 +131,7 @@
     "recipe_view_webview": "Vue Mealie intégrée",
     "recipe_view_browser": "Nouvel onglet du navigateur",
     "mealie_group_slug": "Groupe Mealie (slug)",
-    "support_project": "Soutenir le projet",
-    "settings_language": "Langue",
-    "language": "Langue",
-    "language_auto": "Automatique (langue de Home Assistant)",
-    "language_helper": "Remplace la langue de Home Assistant pour cette carte, par exemple pour utiliser une variante régionale comme fr-CA."
+    "support_project": "Soutenir le projet"
   },
   "time": {
     "hour": "heure",
