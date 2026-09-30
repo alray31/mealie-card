@@ -57,11 +57,11 @@
     "save": "Enregistrer",
     "add_favorite": "Ajouter aux favoris",
     "remove_favorite": "Retirer des favoris",
-    "add_to_shopping_list": "Ajouter à la liste de courses",
-    "select_shopping_list": "Sélectionner une liste de courses",
+    "add_to_shopping_list": "Ajouter à la liste d'épicerie",
+    "select_shopping_list": "Sélectionner une liste d'épicerie",
     "shopping_list_quantity": "Multiplicateur de quantité",
-    "recipe_added_to_shopping_list": "Recette ajoutée à la liste de courses",
-    "no_shopping_lists": "Aucune liste de courses disponible",
+    "recipe_added_to_shopping_list": "Recette ajoutée à la liste d'épicerie",
+    "no_shopping_lists": "Aucune liste d'épicerie disponible",
     "no_ingredients": "Aucun ingrédient disponible",
     "next": "Suivant",
     "back": "Retour",
@@ -131,7 +131,11 @@
     "recipe_view_webview": "Vue Mealie intégrée",
     "recipe_view_browser": "Nouvel onglet du navigateur",
     "mealie_group_slug": "Groupe Mealie (slug)",
-    "support_project": "Soutenir le projet"
+    "support_project": "Soutenir le projet",
+    "settings_language": "Langue",
+    "language": "Langue",
+    "language_auto": "Automatique (langue de Home Assistant)",
+    "language_helper": "Remplace la langue de Home Assistant pour cette carte, par exemple pour utiliser une variante régionale comme fr-CA."
   },
   "time": {
     "hour": "heure",
